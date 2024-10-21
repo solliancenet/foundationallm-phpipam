@@ -3,10 +3,16 @@
 /**
  * database connection details
  ******************************/
-$db['host'] = '127.0.0.1';
-$db['user'] = 'phpipam';
-$db['pass'] = 'phpipamadmin';
-$db['name'] = 'phpipam';
+// $db['host'] = '127.0.0.1';
+// $db['user'] = 'phpipam';
+// $db['pass'] = 'phpipamadmin';
+// $db['name'] = 'phpipam';
+// $db['port'] = 3306;
+
+$db['host'] = getenv('DB_HOST');
+$db['user'] = getenv('DB_USER');
+$db['pass'] = getenv('DB_PASS');
+$db['name'] = getenv('DB_NAME');
 $db['port'] = 3306;
 
 /**
